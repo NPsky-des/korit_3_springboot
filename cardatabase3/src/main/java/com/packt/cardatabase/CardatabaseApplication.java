@@ -14,14 +14,16 @@ import java.util.Arrays;
 public class CardatabaseApplication implements CommandLineRunner {
 	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
 
-	// CardatabaseApplication의 필드로 repository 선언
+	// 여기서는 CardatabaseApplication의 필드로 repository 선언
 	private final CarRepository repository;
 	private final OwnerRepository oRepository;
+	private final AppUserRepository uRepository;
 	// 생성자 주입을 통한 CarRepository / OwnerRepository
-	public CardatabaseApplication(CarRepository repository, OwnerRepository oRepository) {
+	public CardatabaseApplication(CarRepository repository, OwnerRepository oRepository, AppUserRepository uRepository) {
 		this.repository = repository;
 		this.oRepository = oRepository;
-	}
+        this.uRepository = uRepository;
+    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(CardatabaseApplication.class, args);
@@ -45,5 +47,14 @@ public class CardatabaseApplication implements CommandLineRunner {
 		for (Car car : repository.findAll()) {
 			logger.info("브랜드: {}, 모델명: {}", car.getBrand(), car.getModel());
 		}
+
+		// 사용자명 : user, 비밀번호: user
+		uRepository.save(new AppUser("user", "$2y$04$bgsemwMEBQ5qkrX57p8f1eVeImDmde/jljUFiMWa92Y7RYa6WfbPK","USER"));
+		// 사용자명 : admin, 비밀번호 : admin
+		uRepository.save(new AppUser("admin", "$2y$04$3jp6m1FUP6VhYwOkfy56dOKGvnMyobFYGT76/OWNQIJB8rzaAiijG", "ADMIN"));
+
+
+
+
 	}
 }
