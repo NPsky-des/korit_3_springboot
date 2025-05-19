@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a6bb3b9-28c2-46ff-8689-12184136a2ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/domain/AccountCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/domain/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/domain/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/web/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_log/20250516.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/AuthEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/OncePerRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_log/20250519.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardatabase3/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cardatabase3/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/CardatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/CardatabaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/20250515.md" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/20250515.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cardatabase3/src/main/java/com/packt/cardatabase/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/20250516.md" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/20250516.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
